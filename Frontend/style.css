@@ -1,0 +1,47 @@
+body {
+}
+
+#buttons button,
+#professionalSection button,
+#personalSection button {
+  border: none;
+
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+#buttons,
+#professionalSection,
+#personalSection {
+  float: right;
+}
+
+#exp {
+}
+
+#projects {
+}
+
+#contact {
+}
+
+#cool {
+}
+
+#about {
+}
+
+#about2 {
+}
+
+#photos {
+}
+
+.section {
+  padding: 20px;
+  margin: 0;
+}
