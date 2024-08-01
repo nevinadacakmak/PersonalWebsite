@@ -69,3 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
     photos.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+function Heading() {
+  let title = "this is some text";
+
+  return;
+  <h1>{title}</h1>;
+}
