@@ -1,13 +1,13 @@
-function Nav() {
+import React from "react";
+
+function Nav({ setActiveSection }) {
   return (
-    <nav className="main-nav">
-      <ul>
-        <li>Home</li>
-        <li>Articles</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <div id="nav-buttons">
+      <button onClick={() => setActiveSection("professional")}>
+        PROFESSIONAL
+      </button>
+      <button onClick={() => setActiveSection("personal")}>PERSONAL</button>
+    </div>
   );
 }
 

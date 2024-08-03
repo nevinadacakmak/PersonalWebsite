@@ -1,47 +1,84 @@
 body {
-}
-
-#buttons button,
-#professionalSection button,
-#personalSection button {
-  border: none;
-
-  padding: 10px 20px;
-  text-align: center;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  border-radius: 8px;
-}
-
-#buttons,
-#professionalSection,
-#personalSection {
-  float: right;
-}
-
-#exp {
-}
-
-#projects {
-}
-
-#contact {
-}
-
-#cool {
-}
-
-#about {
-}
-
-#about2 {
-}
-
-#photos {
-}
-
-.section {
-  padding: 20px;
   margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.App {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+}
+
+#nav-buttons button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#nav-buttons button:hover {
+  background-color: #777;
+}
+
+.content {
+  padding: 20px;
+}
+
+h1,
+h3 {
+  color: #444;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#professional-section,
+#personal-section {
+  padding: 20px;
+}
+
+#professional-buttons,
+#personal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#professional-buttons button,
+#personal-buttons button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#professional-buttons button:hover,
+#personal-buttons button:hover {
+  background-color: #555;
 }
