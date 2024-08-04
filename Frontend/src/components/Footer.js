@@ -2,9 +2,13 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="copyright">
-      <p>Made with love by Myself</p>
-    </div>
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="footer-left">
+          <p>&copy; 2024 Nevin Ada Çakmak. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
   );
 }
 

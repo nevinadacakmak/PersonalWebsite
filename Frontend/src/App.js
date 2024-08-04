@@ -3,6 +3,7 @@ import "./index.css";
 import Nav from "./components/Nav";
 import Professional from "./components/Professional";
 import Personal from "./components/Personal";
+import Footer from "./components/Footer";
 
 function App() {
   const [activeSection, setActiveSection] = useState("professional");
@@ -14,6 +15,7 @@ function App() {
         {activeSection === "professional" && <Professional />}
         {activeSection === "personal" && <Personal />}
       </div>
+      <Footer />
     </div>
   );
 }

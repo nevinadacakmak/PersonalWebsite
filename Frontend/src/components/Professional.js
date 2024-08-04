@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import About from "./About";
 import Experience from "./Experience";
-import Projects from "./Projects";
 import Contact from "./Contact";
 
 function Professional() {
@@ -14,7 +13,6 @@ function Professional() {
         <button onClick={() => setActiveTab("experience")}>
           MY EXPERIENCES
         </button>
-        <button onClick={() => setActiveTab("projects")}>PROJECTS</button>
         <button onClick={() => setActiveTab("contact")}>
           CONTACT INFORMATION
         </button>
@@ -22,7 +20,6 @@ function Professional() {
       <div id="professional-content">
         {activeTab === "about" && <About />}
         {activeTab === "experience" && <Experience />}
-        {activeTab === "projects" && <Projects />}
         {activeTab === "contact" && <Contact />}
       </div>
     </div>
