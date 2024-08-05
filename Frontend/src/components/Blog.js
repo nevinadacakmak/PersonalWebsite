@@ -3,7 +3,7 @@ import React from "react";
 function Photos() {
   return (
     <div id="photos">
-      <h3>Photos and Videos</h3>
+      <h3>What I learned today?</h3>
       <p>Content coming soon...</p>
     </div>
   );
