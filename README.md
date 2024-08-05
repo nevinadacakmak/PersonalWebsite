@@ -29,15 +29,6 @@ To run this project locally, follow these steps:
 Clone the repository:
 git clone https://github.com/nevinadacakmak/portfolio-website.git
 
-Navigate to the project directory:
-cd portfolio-website
-
-Install dependencies:
-npm install
-
-Start the development server:
-npm start
-
 Usage
 Explore the Website: Navigate through the different sections to learn more about my experiences and projects.
 Contact Me: Use the contact form to reach out with any inquiries or collaboration ideas.
