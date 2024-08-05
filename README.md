@@ -1,4 +1,3 @@
-Nevin Ada Çakmak's Portfolio Website
 Welcome to my personal portfolio website! This project showcases my journey, experiences, skills, and projects. It's a space where I share my passion for technology, art, and all the cool things that inspire me.
 
 Table of Contents
