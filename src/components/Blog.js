@@ -3,7 +3,7 @@ import React from "react";
 function Blog() {
   return (
     <div id="blog">
-      <h3>What I learned today?</h3>
+      <h1>Blog / Notes</h1>
       <p>Content coming soon...</p>
     </div>
   );
