@@ -4,7 +4,7 @@ function Experience() {
   return (
     <div>
       <div id="experience">
-        <h3>My Experiences</h3>
+        <h1>My Experiences</h1>
         <p>
           <strong>
             Vice President of Operations, Data Science & Statistics Society
@@ -74,7 +74,7 @@ function Experience() {
       </div>
 
       <div id="projects">
-        <h3>Projects</h3>
+        <h1>Projects</h1>
         <p>
           <strong>Developer, AllergenAlert.co (ElleHacks) - 2024</strong>
           <br />
