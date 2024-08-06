@@ -143,13 +143,13 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 10px; /* Reduced gap for less empty space */
+  gap: 10px;
 }
 
 .about-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* Reduced gap for less empty space */
+  gap: 10px;
 }
 
 .about-photo {
