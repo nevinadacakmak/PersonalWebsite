@@ -5,12 +5,12 @@ import Projects from "./components/Projects";
 import Blog from "./components/Blog";
 import Photo from "./components/Photo";
 import Footer from "./components/Footer";
-import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
+      <Navbar />
       <div className="content">
         <About />
         <Projects />

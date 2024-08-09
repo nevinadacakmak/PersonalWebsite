@@ -1,7 +1,7 @@
 import React from "react";
 import { FaInstagram, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
-function Sidebar() {
+function Navbar() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -13,12 +13,23 @@ function Sidebar() {
   };
 
   return (
-    <div className="sidebar">
-      <div className="menu">
-        <button onClick={() => scrollToSection("about")}>About</button>
-        <button onClick={() => scrollToSection("projects")}>Projects</button>
-        <button onClick={() => scrollToSection("photo")}>Photo Album</button>
-        <button onClick={() => scrollToSection("blog")}>Blog</button>
+    <div className="navbar">
+      <div className="nav-links">
+        <a
+          href="path/to/your/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-link"
+        >
+          Resume
+        </a>
+        <a
+          href="#content"
+          onClick={() => scrollToSection("content")}
+          className="content-link"
+        >
+          Content
+        </a>
       </div>
 
       <div className="social-media-icons">
@@ -55,4 +66,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default Navbar;

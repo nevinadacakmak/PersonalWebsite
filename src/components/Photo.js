@@ -1,107 +1,42 @@
 import React from "react";
 
-function Photo() {
+const photos = [
+  { src: "moon_photo4.jpeg", description: "Moon Photo 4" },
+  { src: "robotics_photo1.jpeg", description: "Robotics Event 1" },
+  { src: "drawing_photo2.jpeg", description: "Drawing 2" },
+  { src: "frc_photo2.JPG", description: "FRC Event 2" },
+  { src: "montreal_photo2.jpeg", description: "Montreal 2" },
+  { src: "drawing_photo1.jpeg", description: "Drawing 1" },
+  { src: "dog_photo1.jpg", description: "Dog Photo 1" },
+  { src: "moon_photo2.jpeg", description: "Moon Photo 2" },
+  { src: "toronto_photo2.jpeg", description: "Toronto 2" },
+  { src: "volunteering_photo2.jpeg", description: "Volunteering 2" },
+  { src: "robotics_photo2.jpeg", description: "Robotics Event 2" },
+  { src: "montreal_photo1.jpeg", description: "Montreal 1" },
+  { src: "chess_1.gif", description: "Chess Competition" },
+  { src: "turkey_photo2.jpeg", description: "Turkey 2" },
+  { src: "amacss_photo1.JPG", description: "AMACSS Event" },
+  { src: "toronto_photo1.jpeg", description: "Toronto 1" },
+  { src: "volunteering_photo1.jpeg", description: "Volunteering 1" },
+  { src: "turkey_photo3.jpeg", description: "Turkey 3" },
+  { src: "turkey_photo1.jpeg", description: "Turkey 1" },
+  { src: "montreal_photo3.jpeg", description: "Montreal 3" },
+];
+
+const PhotoGrid = () => {
   return (
-    <div id="photo">
-      <h2>Photo Album</h2>
-
-      <div className="cool-stuff-container">
-        <div className="cool-card">
-          <img src="frc_photo1.jpg" alt="FRC Team '22" />
-          <div className="cool-info">
-            <h3>FRC</h3>
-            <p>
-              My journey with the FIRST Robotics Competition Team - 4th
-              Dimension has been the best experience of my life! From building
-              robots to winning prestigious awards to reaching +16 Million
-              people with our projects, it's been incredible. Check out our
-              team's website at{" "}
-              <a
-                href="https://frc6429.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                frc6429.org
-              </a>
-            </p>
+    <div>
+      <h3>Snapshots</h3>
+      <div className="photo-grid">
+        {photos.map((photo, index) => (
+          <div className="photo-card" key={index}>
+            <img src={`/${photo.src}`} alt={`Photo ${index + 1}`} />
+            <div className="photo-description">{photo.description}</div>
           </div>
-        </div>
-
-        <div className="cool-card">
-          <img src="dog_photo1.jpg" alt="My Dog" />
-          <div className="cool-info">
-            <h3>Pako</h3>
-            <p>No opinions, just facts: my dog is the cutest in the world.</p>
-          </div>
-        </div>
-
-        <div className="cool-card">
-          <img src="chess_1.gif" alt="Chess" />
-          <div className="cool-info">
-            <h3>Chess</h3>
-            <p>
-              I've been playing chess for years, mostly online. I love sharing
-              my favorite games and strategies. Up for a duel?{" "}
-              <a
-                href="https://lichess.org/@/waadaaw"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                lichess.org
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <div className="cool-card">
-          <img src="amacss_photo1.JPG" alt="Amacss" />
-          <div className="cool-info">
-            <h3>AMACSS</h3>
-            <p>
-              This is my team at the Association of Mathematical and Computer
-              Science Students (AMACSS) at the University of Toronto
-              Scarborough. I was a Member of the External Relations during 2023
-              - 2024.
-            </p>
-          </div>
-        </div>
-
-        <div className="cool-card">
-          <img src="drawing_photo1.jpeg" alt="Drawing" />
-          <div className="cool-info">
-            <h3>Drawing</h3>
-            <p>
-              Art has always been a part of me. I've recently returned to this
-              hobby, blending my love for coding and creativity. Here is my
-              latest work.
-            </p>
-          </div>
-        </div>
-
-        <div className="cool-card">
-          <img src="moon_photo1.jpg" alt="Moon" />
-          <div className="cool-info">
-            <h3>Moon</h3>
-            <p>
-              I love taking photos of the moon. It's a great way to relax and
-              enjoy the night. Here is my latest photo.
-            </p>
-          </div>
-        </div>
-
-        <div className="cool-card">
-          <img src="montreal_photo1.jpeg" alt="Montreal" />
-          <div className="cool-info">
-            <h3>Montreal</h3>
-            <p>
-              This is the St. Joseph's Oratory of Mount Royal in Montreal. I
-              visited it in Feb 2024 and it was truly breathtaking.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
-}
+};
 
-export default Photo;
+export default PhotoGrid;
