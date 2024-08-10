@@ -9,7 +9,6 @@ function About() {
         </div>
         <div className="bio-container">
           <h1>Hi there, I am Ada!</h1>
-          <h3>About Me</h3>
           <p>
             I am a second-year Computer Science student at the{" "}
             <a

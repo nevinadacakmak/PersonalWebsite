@@ -16,13 +16,14 @@ function Navbar() {
     <div className="navbar">
       <div className="nav-links">
         <a
-          href="path/to/your/resume.pdf"
+          href="resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="resume-link"
         >
           Resume
         </a>
+        <p>|</p>
         <a
           href="#content"
           onClick={() => scrollToSection("content")}
