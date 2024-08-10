@@ -1,20 +1,21 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import { FaInstagram, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
 function Navbar() {
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: "smooth",
-      });
-    }
+  const location = useLocation();
+
+  const getLinkClass = (path) => {
+    return location.pathname === path ? "active-link" : "";
   };
 
   return (
     <div className="navbar">
       <div className="nav-links">
+        <Link to="/" className={`nav-link ${getLinkClass("/")}`}>
+          Home
+        </Link>
+        <p>|</p>
         <a
           href="resume.pdf"
           target="_blank"
@@ -24,13 +25,9 @@ function Navbar() {
           Resume
         </a>
         <p>|</p>
-        <a
-          href="#content"
-          onClick={() => scrollToSection("content")}
-          className="content-link"
-        >
+        <Link to="/content" className={`nav-link ${getLinkClass("/content")}`}>
           Content
-        </a>
+        </Link>
       </div>
 
       <div className="social-media-icons">
