@@ -20,8 +20,9 @@ function About() {
             </a>
             . My passion lies in the intersection of technology and human
             learning, and I am committed to promoting gender equality in STEM
-            fields, with over seven years of experience & volunteering in
-            robotics programs.
+            fields, with over eight years of experience & volunteering in
+            robotics programs. If I can be helpful or you'd like to chat, please
+            reach out!
           </p>
         </div>
       </div>

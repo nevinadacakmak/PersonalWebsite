@@ -11,6 +11,7 @@ function Navbar() {
 
   return (
     <div className="navbar">
+      <div className="navbar-brand">Nevin Ada Çakmak</div>
       <div className="nav-links">
         <Link to="/" className={`nav-link ${getLinkClass("/")}`}>
           Home
@@ -28,6 +29,8 @@ function Navbar() {
         <Link to="/content" className={`nav-link ${getLinkClass("/content")}`}>
           Content
         </Link>
+        <p>|</p>
+        <p>Contact :</p>
       </div>
 
       <div className="social-media-icons">
