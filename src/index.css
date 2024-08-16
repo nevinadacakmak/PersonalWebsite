@@ -93,6 +93,7 @@ body {
   width: 100%;
   overflow-x: auto; /* Enable horizontal scrolling */
   white-space: nowrap; /* Ensure images don't wrap to the next line */
+  margin-top: 40px;
 }
 
 .photo-bar {
@@ -120,16 +121,12 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background-color: var(--secondary);
   color: var(--text);
   padding: 10px;
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s;
-}
-
-.photo-card:hover .photo-description {
-  opacity: 1;
 }
 
 /* About Section */
@@ -143,7 +140,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   gap: 20px;
 }
@@ -160,7 +157,6 @@ body {
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bio-container {
@@ -228,10 +224,9 @@ body {
 
 .project-card {
   width: 300px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: var(--secondary);
 }
 
 .project-link {
@@ -259,12 +254,12 @@ body {
 .project-content h3 {
   margin: 0;
   font-size: 1.5rem;
-  color: #333;
+  color: var(--text);
 }
 
 .project-content p {
   font-size: 1rem;
-  color: #666;
+  color: var(--text);
 }
 
 /* Footer */
@@ -273,7 +268,6 @@ body {
   color: var(--text);
   padding: 20px;
   width: 100%;
-  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3);
   position: relative;
   bottom: 0;
 }
@@ -289,4 +283,56 @@ body {
 .footer-content p {
   margin: 0;
   font-size: 1rem;
+}
+
+/* Content */
+
+#content {
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.content-section {
+  margin-bottom: 40px;
+}
+
+.content-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.content-item {
+  margin-bottom: 20px;
+}
+
+.content-item a {
+  font-size: 1.2rem;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.content-item a:hover {
+  color: var(--accent);
+}
+
+.content-item p {
+  font-size: 1rem;
+  color: var(--text);
+  margin-top: 5px;
+}
+
+.thumbnail {
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
 }

@@ -8,7 +8,7 @@ function About() {
           <img src="formal_photo.jpg" alt="Profile" className="photo" />
         </div>
         <div className="bio-container">
-          <h1>Hi there, I am Ada!</h1>
+          <h1>Hey, I'm Ada!</h1>
           <p>
             I am a second-year Computer Science student at the{" "}
             <a
@@ -20,7 +20,7 @@ function About() {
             </a>
             . My passion lies in the intersection of technology and human
             learning, and I am committed to promoting gender equality in STEM
-            fields, with over eight years of experience & volunteering in
+            fields, with over eight years of experience &amp; volunteering in
             robotics programs. If I can be helpful or you'd like to chat, please
             reach out!
           </p>
