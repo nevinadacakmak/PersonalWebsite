@@ -16,7 +16,7 @@ function Navbar() {
         <Link to="/" className={`nav-link ${getLinkClass("/")}`}>
           Home
         </Link>
-        <p>|</p>
+
         <a
           href="resume.pdf"
           target="_blank"
@@ -25,12 +25,10 @@ function Navbar() {
         >
           Resume
         </a>
-        <p>|</p>
+
         <Link to="/content" className={`nav-link ${getLinkClass("/content")}`}>
           Content
         </Link>
-        <p>|</p>
-        <p>Contact :</p>
       </div>
 
       <div className="social-media-icons">
