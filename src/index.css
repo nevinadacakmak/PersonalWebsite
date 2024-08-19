@@ -1,9 +1,9 @@
 :root {
   --text: #f8f9f6;
-  --background: #0a0c08;
-  --primary: #839366;
-  --secondary: #364f36;
-  --accent: #4c7051;
+  --background: #121212;
+  --primary: #6a0d91;
+  --secondary: #8a2c8c;
+  --accent: #a15ec9;
 }
 
 /* General styles */
@@ -79,52 +79,64 @@ body {
 
 /* Main content */
 .content {
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 20px;
   text-align: center;
 }
 
 /* Photo sections */
-#photo {
-  padding: 20px;
+.embla__play {
+  padding: 5px 10px;
+  border: 3px solid var(--primary);
   background-color: var(--background);
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
-  margin-top: 40px;
-}
-
-.photo-bar {
-  display: flex;
-  gap: 10px;
-}
-
-.photo-card {
-  flex: 0 0 auto;
-  height: 100px;
-  width: auto;
-  position: relative;
-  overflow: hidden;
-  background-color: var(--secondary);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.photo-card img {
-  width: 100%;
-  height: 100%;
-}
-
-.photo-description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--secondary);
   color: var(--text);
-  padding: 10px;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.embla h2,
+.embla__play {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.embla__play:hover {
+  background-color: var(--accent);
+}
+
+.embla {
+  margin-top: 20px;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: 0;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 12%;
+  margin-right: 0.5rem;
+}
+
+.embla__slide__img {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
 }
 
 /* About Section */
@@ -322,11 +334,6 @@ h1 {
     flex-direction: column; /* Stack navbar elements vertically */
   }
 
-  .navbar-content {
-    flex-direction: column; /* Stack content vertically */
-    gap: 5px;
-  }
-
   .nav-links {
     flex-direction: row; /* Keep links in a row */
     gap: 5px;
@@ -345,5 +352,9 @@ h1 {
 
   .content {
     margin-top: 75px;
+  }
+
+  .embla__slide__img {
+    height: 60px;
   }
 }

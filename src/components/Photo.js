@@ -1,83 +1,93 @@
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import AutoScroll from "embla-carousel-auto-scroll";
 
-const photos = [
-  { src: "robotics_photo1.jpeg", description: "Robotics Event 1" },
-  { src: "moon_photo5.jpeg", description: "Moon Photo 5" },
-  { src: "frc_photo2.JPG", description: "FRC Event 2" },
-  { src: "montreal_photo3.jpeg", description: "Montreal 3" },
-  { src: "dog_photo1.jpg", description: "Dog Photo 1" },
-  { src: "drawing_photo1.jpeg", description: "Drawing 1" },
-  { src: "moon_photo4.jpeg", description: "Moon Photo 4" },
-  { src: "volunteering_photo1.jpeg", description: "Volunteering 1" },
-  { src: "turkey_photo3.jpeg", description: "Turkey 3" },
-  { src: "chess_1.gif", description: "Chess Competition" },
-  { src: "robotics_photo2.jpeg", description: "Robotics Event 2" },
-  { src: "dog_photo2.jpeg", description: "Dog Photo 2" },
-  { src: "montreal_photo1.jpeg", description: "Montreal 1" },
-  { src: "moon_photo7.jpeg", description: "Moon Photo 7" },
-  { src: "turkey_photo1.jpeg", description: "Turkey 1" },
-  { src: "drawing_photo2.jpeg", description: "Drawing 2" },
-  { src: "moon_photo6.jpeg", description: "Moon Photo 6" },
-  { src: "toronto_photo1.jpeg", description: "Toronto 1" },
-  { src: "volunteering_photo2.jpeg", description: "Volunteering 2" },
-  { src: "toronto_photo2.jpeg", description: "Toronto 2" },
-  { src: "montreal_photo2.jpeg", description: "Montreal 2" },
-  { src: "moon_photo3.jpeg", description: "Moon Photo 3" },
-  { src: "amacss_photo1.JPG", description: "AMACSS Event" },
-  { src: "moon_photo1.jpg", description: "Moon Photo 1" },
-  { src: "frc_photo1.jpg", description: "FRC Event 1" },
-  { src: "robotics_photo2.jpeg", description: "Robotics Event 2" },
-  { src: "dog_photo2.jpeg", description: "Dog Photo 2" },
-  { src: "montreal_photo3.jpeg", description: "Montreal 3" },
-  { src: "moon_photo2.jpeg", description: "Moon Photo 2" },
-  { src: "turkey_photo2.jpeg", description: "Turkey 2" },
-];
+const EmblaCarousel = (props) => {
+  const { slides, options } = props;
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [
+    AutoScroll({ playOnInit: false }),
+  ]);
+  const [isPlaying, setIsPlaying] = useState(false);
 
-const Photo = () => {
-  const photoBarRef = useRef(null);
-  let animationFrameId = null; // store the ID of the animation frame
+  const toggleAutoplay = useCallback(() => {
+    const autoScroll = emblaApi?.plugins()?.autoScroll;
+    if (!autoScroll) return;
+
+    const playOrStop = autoScroll.isPlaying()
+      ? autoScroll.stop
+      : autoScroll.play;
+    playOrStop();
+  }, [emblaApi]);
 
   useEffect(() => {
-    const photoBar = photoBarRef.current;
-    let scrollAmount = 0;
-    let scrollSpeed = 1;
+    const autoScroll = emblaApi?.plugins()?.autoScroll;
+    if (!autoScroll) return;
 
-    const autoScroll = () => {
-      if (photoBar) {
-        scrollAmount += scrollSpeed;
-        if (scrollAmount >= photoBar.scrollWidth - photoBar.clientWidth) {
-          scrollAmount = 0; // Reset scroll to start when reaching the end
-        }
-        photoBar.scrollLeft = scrollAmount;
-      }
-      animationFrameId = requestAnimationFrame(autoScroll); // store the ID of the animation frame
-    };
-
-    autoScroll(); // Start the auto-scrolling
-
-    return () => cancelAnimationFrame(animationFrameId); // cancel the animation frame using the stored ID
-  }, []);
+    setIsPlaying(autoScroll.isPlaying());
+    emblaApi
+      .on("autoScroll:play", () => setIsPlaying(true))
+      .on("autoScroll:stop", () => setIsPlaying(false))
+      .on("reInit", () => setIsPlaying(autoScroll.isPlaying()));
+  }, [emblaApi]);
 
   return (
-    <div id="photo">
-      <div
-        className="photo-bar"
-        ref={photoBarRef}
-        style={{ overflowX: "scroll", whiteSpace: "nowrap" }}
-      >
-        {photos.map((photo, index) => (
-          <div
-            className="photo-card"
-            key={index}
-            style={{ display: "inline-block" }}
-          >
-            <img src={photo.src} alt={photo.description} />
-            <div className="photo-description">{photo.description}</div>
-          </div>
-        ))}
+    <div className="embla">
+      <h2>Photo Gallery</h2>
+      <button className="embla__play" onClick={toggleAutoplay} type="button">
+        {isPlaying ? "Stop" : "Start"}
+      </button>
+      <div className="embla__viewport" ref={emblaRef}>
+        <div className="embla__container">
+          {slides.map((slide, index) => (
+            <div className="embla__slide" key={index}>
+              <img
+                src={`/images/${slide}`}
+                alt={`Slide ${index + 1}`}
+                className="embla__slide__img"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
+
+const slides = [
+  "amacss_photo1.JPG",
+  "chess_1.gif",
+  "dog_photo1.jpg",
+  "dog_photo2.jpeg",
+  "drawing_photo1.jpeg",
+  "drawing_photo2.jpeg",
+  "frc_photo1.jpg",
+  "frc_photo2.JPG",
+  "montreal_photo1.jpeg",
+  "montreal_photo2.jpeg",
+  "montreal_photo3.jpeg",
+  "moon_photo1.jpg",
+  "moon_photo2.jpeg",
+  "moon_photo3.jpeg",
+  "moon_photo4.jpeg",
+  "moon_photo5.jpeg",
+  "moon_photo6.jpeg",
+  "moon_photo7.jpeg",
+  "robotics_photo1.jpeg",
+  "robotics_photo2.jpeg",
+  "toronto_photo1.jpeg",
+  "toronto_photo2.jpeg",
+  "turkey_photo1.jpeg",
+  "turkey_photo2.jpeg",
+  "turkey_photo3.jpeg",
+  "volunteering_photo1.jpeg",
+  "volunteering_photo2.jpeg",
+];
+
+const options = {
+  loop: true,
+  skipSnaps: false,
+};
+
+const Photo = () => <EmblaCarousel slides={slides} options={options} />;
 
 export default Photo;
