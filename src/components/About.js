@@ -22,7 +22,10 @@ function About() {
             learning, and I am committed to promoting gender equality in STEM
             fields, with over eight years of experience &amp; volunteering in
             robotics programs. If I can be helpful or you'd like to chat, please
-            reach out!
+            reach out to{" "}
+            <a href="mailto:nevinada.cakmak@mail.utoronto.ca">
+              nevinada.cakmak@mail.utoronto.ca
+            </a>
           </p>
         </div>
       </div>

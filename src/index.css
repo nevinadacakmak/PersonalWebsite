@@ -25,14 +25,14 @@ body {
 .navbar {
   position: fixed;
   display: flex;
-  justify-content: space-between;
-  width: calc(100% - 40px);
+  width: calc(100% - 60px);
   z-index: 1000;
   background-color: var(--background);
   color: var(--text);
   top: 0;
   padding: 10px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-brand {
@@ -93,8 +93,11 @@ body {
   border-radius: 5px;
   cursor: pointer;
   align-items: center;
-  margin-left: 10px;
   font-size: 1.2rem;
+}
+
+.embla h2 {
+  margin-right: 10px;
 }
 
 .embla h2,
@@ -152,7 +155,6 @@ body {
   justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
-  gap: 20px;
 }
 
 .about-photo {
@@ -202,7 +204,6 @@ body {
 
 /* Projects Section */
 #projects {
-  padding: 20px;
   margin-bottom: 20px;
 }
 
@@ -332,6 +333,8 @@ h1 {
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column; /* Stack navbar elements vertically */
+    width: calc(100% - 60px);
+    justify-content: center;
   }
 
   .nav-links {
@@ -352,9 +355,20 @@ h1 {
 
   .content {
     margin-top: 75px;
+    padding: 0px;
   }
 
   .embla__slide__img {
-    height: 60px;
+    height: 100px;
+  }
+
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    margin-bottom: 20px;
   }
 }

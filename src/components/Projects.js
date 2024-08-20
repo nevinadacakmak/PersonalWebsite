@@ -20,7 +20,7 @@ function Projects() {
               />
             </div>
             <div className="project-content">
-              <h3>AllergenAlert.co (ElleHacks) - 2024</h3>
+              <h3>AllergenAlert.co ElleHacks (MLH) - 2024</h3>
               <p>Identifies allergen trees using Toronto-specific data.</p>
             </div>
           </a>
@@ -41,7 +41,7 @@ function Projects() {
             </div>
             <div className="project-content">
               <h3>Software Dev</h3>
-              <h3>(2023-present)</h3>
+              <h3>(2023 - present)</h3>
               <p>
                 Developed and improved a trading algorithm for financial markets
                 to make real-time trading decisions.
