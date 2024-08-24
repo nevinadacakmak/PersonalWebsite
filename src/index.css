@@ -12,6 +12,9 @@ body {
   font-family: Arial, sans-serif;
   background-color: var(--background);
   color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* App container */
@@ -19,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  flex-grow: 1;
 }
 
 /* Navbar */
@@ -82,6 +86,7 @@ body {
   margin-top: 70px;
   padding: 20px;
   text-align: center;
+  flex-grow: 1;
 }
 
 /* Photo sections */
@@ -283,11 +288,14 @@ body {
   padding: 20px;
   background-color: var(--background);
   color: var(--text);
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .content-section {
@@ -354,7 +362,7 @@ h1 {
   }
 
   .content {
-    margin-top: 75px;
+    margin-top: 80px;
     padding: 0px;
   }
 

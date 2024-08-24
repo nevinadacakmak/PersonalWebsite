@@ -1,9 +1,8 @@
 import React from "react";
 
 const Content = () => {
-  // YouTube video ID extracted from the URL
   const videoId = "KJ_gXUC0fZA";
-  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`; // URL for the highest quality thumbnail
+  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
 
   return (
     <div id="content">

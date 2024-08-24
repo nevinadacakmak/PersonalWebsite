@@ -66,12 +66,10 @@ const slides = [
   "moon_photo2.jpeg",
   "frc_photo2.JPG",
   "dog_photo2.jpeg",
-  "moon_photo6.jpeg",
   "robotics_photo2.jpeg",
   "frc_photo1.jpg",
   "montreal_photo3.jpeg",
   "turkey_photo1.jpeg",
-  "moon_photo4.jpeg",
   "drawing_photo1.jpeg",
   "toronto_photo1.jpeg",
   "moon_photo7.jpeg",
@@ -79,6 +77,7 @@ const slides = [
   "montreal_photo2.jpeg",
   "turkey_photo2.jpeg",
   "moon_photo1.jpg",
+  "drawing_photo3.jpeg",
 ];
 
 const options = {
