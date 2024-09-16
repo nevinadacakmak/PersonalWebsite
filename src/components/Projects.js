@@ -5,6 +5,7 @@ function Projects() {
     <div id="projects">
       <h1>Projects</h1>
       <div className="projects-container">
+        {/* AllergenAlert.co */}
         <div className="project-card">
           <a
             href="https://github.com/nevinadacakmak/allergen-alert"
@@ -21,10 +22,40 @@ function Projects() {
             </div>
             <div className="project-content">
               <h3>AllergenAlert.co ElleHacks (MLH) - 2024</h3>
-              <p>Identifies allergen trees using Toronto-specific data.</p>
+              <p>
+                Developed a website that identifies allergen trees using
+                Toronto-specific data and user location.
+              </p>
             </div>
           </a>
         </div>
+
+        {/* Student Meal Planner App */}
+        <div className="project-card">
+          <a
+            href="https://github.com/nevinadacakmak/student-meal-planner"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <div className="project-image-wrapper">
+              <img
+                src="/meal_planner_image.png"
+                alt="Student Meal Planner App - 2024"
+                className="project-image"
+              />
+            </div>
+            <div className="project-content">
+              <h3>Student Meal Planner App - 2024</h3>
+              <p>
+                Developing a React Native app to help students plan nutritious
+                meals based on their preferences and budget.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        {/* Trading Algorithm */}
         <div className="project-card">
           <a
             href="https://github.com/nevinadacakmak/finance-algorithm"
@@ -35,16 +66,15 @@ function Projects() {
             <div className="project-image-wrapper">
               <img
                 src="/robotti_image.png"
-                alt="Software Dev (2023-present)"
+                alt="Trading Algorithm - 2024"
                 className="project-image"
               />
             </div>
             <div className="project-content">
-              <h3>Software Dev</h3>
-              <h3>(2023 - present)</h3>
+              <h3>Trading Algorithm - 2024</h3>
               <p>
-                Developed and improved a trading algorithm for financial markets
-                to make real-time trading decisions.
+                Built a C# trading algorithm for BIST100, enhancing trading
+                efficiency and profitability by 14%.
               </p>
             </div>
           </a>
