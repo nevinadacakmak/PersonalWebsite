@@ -283,8 +283,8 @@ body {
   font-size: 1rem;
 }
 
-/* Content */
-#content {
+/* Blog & Braindump */
+#blog {
   padding: 20px;
   background-color: var(--background);
   color: var(--text);
@@ -293,48 +293,54 @@ body {
   margin: 0 auto;
 }
 
-h1 {
+#blog h1 {
   font-size: 2rem;
   margin-bottom: 40px;
 }
 
-.content-section {
+#blog .content-section {
   margin-bottom: 40px;
 }
 
-.content-section h2 {
+#blog .content-section h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.content-item {
+#blog .content-item {
   margin-bottom: 20px;
 }
 
-.content-item a {
+#blog .content-item a {
   font-size: 1.2rem;
   color: var(--primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.content-item a:hover {
+#blog .content-item a:hover {
   color: var(--accent);
 }
 
-.content-item p {
+#blog .content-item p {
   font-size: 1rem;
   color: var(--text);
   margin-top: 5px;
 }
 
-.thumbnail {
+#blog .thumbnail {
   border-radius: 8px;
   transition: transform 0.3s;
 }
 
-.thumbnail:hover {
+#blog .thumbnail:hover {
   transform: scale(1.05);
+}
+
+#blog p {
+  font-size: 1rem;
+  color: var(--text);
+  margin-top: 20px;
 }
 
 /* Responsive adjustments */

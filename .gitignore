@@ -1,2 +1,4 @@
 # Ignore the images folder
 public/images
+node_modules
+build

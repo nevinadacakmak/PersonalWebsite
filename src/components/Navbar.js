@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaInstagram, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Navbar() {
   const location = useLocation();
@@ -20,10 +20,6 @@ function Navbar() {
         <a href="/resume.pdf" className="resume-link">
           Resume
         </a>
-
-        <Link to="/content" className={`nav-link ${getLinkClass("/content")}`}>
-          Content
-        </Link>
       </div>
 
       <div className="social-media-icons">
@@ -40,13 +36,6 @@ function Navbar() {
           rel="noopener noreferrer"
         >
           <FaLinkedin />
-        </a>
-        <a
-          href="https://twitter.com/ADACAKMAKK"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTwitter />
         </a>
         <a
           href="https://github.com/nevinadacakmak/"
