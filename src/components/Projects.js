@@ -106,10 +106,10 @@ function Projects() {
           </a>
         </div>
 
-        {/* RateMyCourses.com */}
+        {/* RateMyCourses.org */}
         <div className="project-card">
           <a
-            href="https://www.ratemycourses.com/"
+            href="https://www.ratemycourses.org/"
             target="_blank"
             rel="noopener noreferrer"
             className="project-link"
@@ -117,12 +117,12 @@ function Projects() {
             <div className="project-image-wrapper">
               <img
                 src="/ratemycourses_image.png"
-                alt="RateMyCourses.com - 2024"
+                alt="RateMyCourses.org - 2024"
                 className="project-image"
               />
             </div>
             <div className="project-content">
-              <h3>RateMyCourses.com</h3>
+              <h3>RateMyCourses.org</h3>
               <p>
                 Contributing to a web platform for students to rate university
                 courses, using React.js and Django for front-end and back-end
