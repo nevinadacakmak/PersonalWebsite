@@ -13,18 +13,12 @@ function Projects() {
             rel="noopener noreferrer"
             className="project-link"
           >
-            <div className="project-image-wrapper">
-              <img
-                src="/allergen_alert_image.png"
-                alt="AllergenAlert.co ElleHacks (MLH) - 2024"
-                className="project-image"
-              />
-            </div>
             <div className="project-content">
-              <h3>AllergenAlert.co ElleHacks (MLH)</h3>
+              <h3>AllergenAlert.co (ElleHacks)</h3>
               <p>
-                Built a website using HTML, CSS, and JavaScript to identify
-                allergen trees based on user location, using government data.
+                Developed a website using HTML, CSS, and JavaScript to help
+                users identify allergen trees based on their location by
+                leveraging government data.
               </p>
             </div>
           </a>
@@ -38,19 +32,12 @@ function Projects() {
             rel="noopener noreferrer"
             className="project-link"
           >
-            <div className="project-image-wrapper">
-              <img
-                src="/meal_planner_image.png"
-                alt="Student Meal Planner App - 2024"
-                className="project-image"
-              />
-            </div>
             <div className="project-content">
               <h3>Univeats: Student Meal Planner App</h3>
               <p>
-                Developing a mobile app using React Native and Django, enabling
-                university students to plan nutritious meals, integrating
-                grocery lists and meal history.
+                Creating a mobile application with React Native and Django that
+                empowers university students to plan nutritious meals, featuring
+                grocery lists and meal histories.
               </p>
             </div>
           </a>
@@ -64,18 +51,11 @@ function Projects() {
             rel="noopener noreferrer"
             className="project-link"
           >
-            <div className="project-image-wrapper">
-              <img
-                src="/robotti_image.png"
-                alt="Trading Algorithm - 2024"
-                className="project-image"
-              />
-            </div>
             <div className="project-content">
-              <h3>Trading Algorithm</h3>
+              <h3>Automated Trading Algorithm</h3>
               <p>
-                Built a C# trading algorithm integrated with a financial trading
-                app's database, increasing profitability by 14%.
+                Designed a C# trading algorithm integrated with a financial
+                trading application, achieving a 14% increase in profitability.
               </p>
             </div>
           </a>
@@ -89,18 +69,12 @@ function Projects() {
             rel="noopener noreferrer"
             className="project-link"
           >
-            <div className="project-image-wrapper">
-              <img
-                src="/swipe_shield_image.png"
-                alt="SwipeShield (Hack the Valley) - 2024"
-                className="project-image"
-              />
-            </div>
             <div className="project-content">
               <h3>SwipeShield (Hack the Valley)</h3>
               <p>
                 Developed an unsupervised machine learning model for passive
-                authentication, using K-Means clustering for anomaly detection.
+                authentication, utilizing K-Means clustering for effective
+                anomaly detection.
               </p>
             </div>
           </a>
@@ -114,19 +88,12 @@ function Projects() {
             rel="noopener noreferrer"
             className="project-link"
           >
-            <div className="project-image-wrapper">
-              <img
-                src="/ratemycourses_image.png"
-                alt="RateMyCourses.org - 2024"
-                className="project-image"
-              />
-            </div>
             <div className="project-content">
               <h3>RateMyCourses.org</h3>
               <p>
-                Contributing to a web platform for students to rate university
-                courses, using React.js and Django for front-end and back-end
-                development.
+                Contributing to a web platform that enables students to rate
+                university courses, utilizing React.js for front-end and Django
+                for back-end development.
               </p>
             </div>
           </a>

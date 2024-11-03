@@ -2,14 +2,14 @@
   --text: #f8f9f6;
   --background: #121212;
   --primary: #6a0d91;
-  --secondary: #8a2c8c;
-  --accent: #a15ec9;
+  --secondary: #4b0082;
+  --accent: #9b59b6;
 }
 
 /* General styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif, "Roboto";
   background-color: var(--background);
   color: var(--text);
   display: flex;
@@ -163,17 +163,17 @@ body {
 }
 
 .about-photo {
-  flex: 1;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  align-items: center;
 }
 
 .photo {
   width: 250px;
   height: 250px;
-  border-radius: 50%;
   object-fit: cover;
+  border-radius: 15%;
+  margin-bottom: 20px;
 }
 
 .bio-container {
@@ -224,7 +224,16 @@ body {
   width: 300px;
   border-radius: 8px;
   overflow: hidden;
-  background-color: var(--secondary);
+  background-color: var(--primary);
+}
+
+.project-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover .project-content h3 {
+  color: var(--accent); /* Change color on hover */
 }
 
 .project-link {
@@ -232,19 +241,6 @@ body {
   text-decoration: none;
   color: inherit;
 }
-
-.project-image-wrapper {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.project-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .project-content {
   padding: 15px;
 }
@@ -383,6 +379,14 @@ body {
   }
 
   .project-card {
+    margin-bottom: 20px;
+  }
+
+  .photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5%;
     margin-bottom: 20px;
   }
 }
