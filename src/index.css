@@ -172,7 +172,7 @@ body {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 15%;
+  border-radius: 25%;
   margin-bottom: 20px;
 }
 
@@ -225,15 +225,12 @@ body {
   border-radius: 8px;
   overflow: hidden;
   background-color: var(--primary);
+  margin-up: 10px;
 }
 
 .project-card:hover {
-  transform: translateY(-15px);
+  transform: translateY(-10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.project-card:hover .project-content h3 {
-  color: var(--accent); /* Change color on hover */
 }
 
 .project-link {
