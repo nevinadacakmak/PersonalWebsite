@@ -5,25 +5,6 @@ function Projects() {
     <div id="projects">
       <h1>Projects</h1>
       <div className="projects-container">
-        {/* AllergenAlert.co */}
-        <div className="project-card">
-          <a
-            href="https://github.com/nevinadacakmak/allergen-alert"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-link"
-          >
-            <div className="project-content">
-              <h3>AllergenAlert.co (ElleHacks)</h3>
-              <p>
-                Developed a website using HTML, CSS, and JavaScript to help
-                users identify allergen trees based on their location by
-                leveraging government data.
-              </p>
-            </div>
-          </a>
-        </div>
-
         {/* Student Meal Planner App */}
         <div className="project-card">
           <a
