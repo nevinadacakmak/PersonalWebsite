@@ -8,8 +8,7 @@ const Blog = () => {
   const blogPosts = [
     {
       title: "Part 2: Building the Backbone - Backend APIs and Database Setup",
-      description:
-        "A guide on setting up backend APIs and databases for projects.",
+      description: "Setting up backend APIs and databases.",
       link: "https://medium.com/@nevinadacakmak/part-2-building-the-backbone-backend-apis-and-database-setup-5e334c78aa72",
     },
     {
