@@ -72,12 +72,23 @@ function Projects() {
             <div className="project-content">
               <h3>RateMyCourses.org</h3>
               <p>
-                Contributing to a web platform that enables students to rate
-                university courses, utilizing React.js for front-end and Django
-                for back-end development.
+                Leading the development to a web platform that enables students
+                to rate university courses, using React.js for front-end and
+                Django for back-end development.
               </p>
             </div>
           </a>
+        </div>
+        {/* Planetze */}
+        <div className="project-card">
+          <div className="project-content">
+            <h3>Planetze</h3>
+            <p>
+              Developed a <strong>key feature for a mobile application</strong>{" "}
+              aimed at helping users track their carbon footprint. Used Firebase
+              DB, Android Studio, Java.
+            </p>
+          </div>
         </div>
       </div>
     </div>

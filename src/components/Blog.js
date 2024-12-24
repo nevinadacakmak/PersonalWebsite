@@ -7,8 +7,9 @@ const Blog = () => {
   // Array of blog posts with title, description, and Medium link
   const blogPosts = [
     {
-      title: "Part 2: Building the Backbone - Backend APIs and Database Setup",
-      description: "Setting up backend APIs and databases.",
+      title:
+        "Building Univeats, Part 2: Building the Backbone - Backend, APIs, and Database Setup",
+      description: "Setting up backend APIs and databases for the project.",
       link: "https://medium.com/@nevinadacakmak/part-2-building-the-backbone-backend-apis-and-database-setup-5e334c78aa72",
     },
     {
@@ -23,6 +24,13 @@ const Blog = () => {
       description:
         "An overview of a month as a CS student at the University of Toronto.",
       link: "https://medium.com/@nevinadacakmak/october-blog-as-a-cs-student-uoft-2b5adbdd3d20",
+    },
+    {
+      title:
+        "My Journey with Tech@RBC Women’s Advisory Program: From Application to the End",
+      description:
+        "My experience with RBC Tech’s Women’s Advisory Program, in a nutshell.",
+      link: "https://medium.com/@nevinadacakmak/my-journey-with-tech-rbc-womens-advisory-program-from-application-to-the-end-01369a83edc7",
     },
   ];
 
