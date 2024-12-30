@@ -32,6 +32,11 @@ const Blog = () => {
         "My experience with RBC Tech’s Women’s Advisory Program, in a nutshell.",
       link: "https://medium.com/@nevinadacakmak/my-journey-with-tech-rbc-womens-advisory-program-from-application-to-the-end-01369a83edc7",
     },
+    {
+      title: "Building UnivEats, Part 3: Working on the Frontend",
+      description: "Working on the frontend, a short update",
+      link: "https://medium.com/@nevinadacakmak/building-univeats-part-3-working-on-the-frontend-68617bc57d19",
+    },
   ];
 
   return (
