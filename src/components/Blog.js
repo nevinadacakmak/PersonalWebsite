@@ -7,19 +7,6 @@ const Blog = () => {
   // Array of blog posts with title, description, and Medium link
   const blogPosts = [
     {
-      title:
-        "Building Univeats, Part 2: Building the Backbone - Backend, APIs, and Database Setup",
-      description: "Setting up backend APIs and databases for the project.",
-      link: "https://medium.com/@nevinadacakmak/part-2-building-the-backbone-backend-apis-and-database-setup-5e334c78aa72",
-    },
-    {
-      title:
-        "Building Univeats: A Journey in Creating the Student Meal Planner App",
-      description:
-        "Insights on building a student meal planner app from scratch.",
-      link: "https://medium.com/@nevinadacakmak/building-univeats-a-journey-in-creating-the-student-meal-planner-app-0228f829d2f2",
-    },
-    {
       title: "October Blog: A Month in the Life of a CS Student at UofT",
       description:
         "An overview of a month as a CS student at the University of Toronto.",
@@ -31,11 +18,6 @@ const Blog = () => {
       description:
         "My experience with RBC Tech’s Women’s Advisory Program, in a nutshell.",
       link: "https://medium.com/@nevinadacakmak/my-journey-with-tech-rbc-womens-advisory-program-from-application-to-the-end-01369a83edc7",
-    },
-    {
-      title: "Building UnivEats, Part 3: Working on the Frontend",
-      description: "Working on the frontend, a short update",
-      link: "https://medium.com/@nevinadacakmak/building-univeats-part-3-working-on-the-frontend-68617bc57d19",
     },
   ];
 

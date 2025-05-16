@@ -5,38 +5,57 @@ function Projects() {
     <div id="projects">
       <h1>Projects</h1>
       <div className="projects-container">
-        {/* Student Meal Planner App */}
+        {/* EduBridge - GenAI Genesis Hackathon */}
         <div className="project-card">
           <a
-            href="https://github.com/nevinadacakmak/student-meal-planner"
+            href="https://github.com/AxisShine/GenAI"
             target="_blank"
             rel="noopener noreferrer"
             className="project-link"
           >
             <div className="project-content">
-              <h3>Univeats: Student Meal Planner App</h3>
+              <h3>EduBridge (GenAI Genesis Hackathon)</h3>
               <p>
-                Creating a mobile application with React Native and Django that
-                empowers university students to plan nutritious meals, featuring
-                grocery lists and meal histories.
+                Built an AI-powered education tool for students with learning
+                disabilities and neurodivergence.
               </p>
             </div>
           </a>
         </div>
 
-        {/* Trading Algorithm */}
+        {/* System Monitoring Tools */}
         <div className="project-card">
           <a
-            href="https://github.com/nevinadacakmak/finance-algorithm"
+            href="https://github.com/nevinadacakmak/c-linux"
             target="_blank"
             rel="noopener noreferrer"
             className="project-link"
           >
             <div className="project-content">
-              <h3>Automated Trading Algorithm</h3>
+              <h3>System Monitoring Tools</h3>
               <p>
-                Designed a C# trading algorithm integrated with a financial
-                trading application, achieving a 14% increase in profitability.
+                Developed Linux command-line tools in C to visualize /proc
+                system info. Added process handling, pipes, signals, and
+                real-time outputs for CPU/memory metrics.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        {/* Assembly Game */}
+        <div className="project-card">
+          <a
+            href="https://github.com/nevinadacakmak/b58-assemblygame"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <div className="project-content">
+              <h3>Assembly Game</h3>
+              <p>
+                Created a 2D drawing game in MIPS Assembly with movement,
+                scoring, challenges, and drawing-based accuracy detection. Used
+                bitmap display for real-time game graphics and logic.
               </p>
             </div>
           </a>
@@ -53,9 +72,28 @@ function Projects() {
             <div className="project-content">
               <h3>SwipeShield (Hack the Valley)</h3>
               <p>
-                Developed an unsupervised machine learning model for passive
-                authentication, utilizing K-Means clustering for effective
-                anomaly detection.
+                Built a passive biometric authentication tool. Implemented{" "}
+                <strong>K-Means clustering</strong> for anomaly detection.
+                Visualized data with Android Debug Bridge and Streamlit.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        {/* Automated Trading Program */}
+        <div className="project-card">
+          <a
+            href="https://github.com/nevinadacakmak/finance-algorithm"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <div className="project-content">
+              <h3>Automated Trading Program</h3>
+              <p>
+                Built a proprietary <strong>C# trading algorithm</strong>{" "}
+                integrated with a stock trading platform. Targeted BIST100 index
+                investors, using real-time financial data.
               </p>
             </div>
           </a>
@@ -73,22 +111,10 @@ function Projects() {
               <h3>RateMyCourses.org</h3>
               <p>
                 Leading the development to a web platform that enables students
-                to rate university courses, using React.js for front-end and
-                Django for back-end development.
+                to rate university courses.
               </p>
             </div>
           </a>
-        </div>
-        {/* Planetze */}
-        <div className="project-card">
-          <div className="project-content">
-            <h3>Planetze</h3>
-            <p>
-              Developed a <strong>key feature for a mobile application</strong>{" "}
-              aimed at helping users track their carbon footprint. Used Firebase
-              DB, Android Studio, Java.
-            </p>
-          </div>
         </div>
       </div>
     </div>
