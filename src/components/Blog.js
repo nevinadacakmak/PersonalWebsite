@@ -23,9 +23,7 @@ const Blog = () => {
 
   return (
     <div id="blog">
-      <h1>Blog & Braindump</h1>
-
-      {/* Blog Section */}
+      <h1>Blog & Content</h1>
       <div className="blog-section">
         {blogPosts.map((post, index) => (
           <div key={index} className="blog-card">
@@ -41,12 +39,7 @@ const Blog = () => {
             </a>
           </div>
         ))}
-      </div>
-
-      {/* Interviews & Talks Section */}
-      <div className="content-section">
-        <h2>Interviews & Talks</h2>
-        <div className="content-item">
+        <div className="content-item" style={{ marginTop: "32px" }}>
           <a
             href={`https://www.youtube.com/watch?v=${videoId}`}
             target="_blank"

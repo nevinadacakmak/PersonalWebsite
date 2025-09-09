@@ -1,9 +1,9 @@
 :root {
   --text: #f8f9f6;
   --background: #121212;
-  --primary: #6a0d91;
-  --secondary: #4b0082;
-  --accent: #9b59b6;
+  --primary: #302c31;
+  --secondary: #443e45;
+  --accent: #555256;
 }
 
 /* General styles */
@@ -84,7 +84,8 @@ body {
 /* Main content */
 .content {
   margin-top: 70px;
-  padding: 20px;
+  padding-left: 300px;
+  padding-right: 300px;
   text-align: center;
   flex-grow: 1;
 }
@@ -209,8 +210,8 @@ body {
 
 /* Projects Section */
 #projects {
-  margin-bottom: 20px;
-  padding: 40px;
+  margin-bottom: 10px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -223,7 +224,7 @@ body {
 
 /* Project Card Styling */
 .project-card {
-  width: 300px;
+  width: 270px;
   border-radius: 8px;
   overflow: hidden;
   background-color: var(--background);
@@ -284,7 +285,7 @@ body {
   font-size: 1rem;
 }
 
-/* Blog & Braindump */
+/* Blog & Content */
 #blog {
   padding: 20px;
   background-color: var(--background);
